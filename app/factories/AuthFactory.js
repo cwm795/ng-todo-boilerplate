@@ -33,6 +33,7 @@ angular.module("TodoApp").factory("AuthFactory", (FBCreds, $q) => {
     });
   };
 
+  // probably don't need this
   authObj.getCurrentUser = () => {
     return currentUser;
   };

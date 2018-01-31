@@ -2,7 +2,7 @@
 
 angular
   .module("TodoApp")
-  .controller("LoginCtrl", function($scope, AuthFactory, $window) {
+  .controller("LoginCtrl", function($scope, AuthFactory, $window, $rootScope) {
     $scope.test = "hello";
 
     // TODO: Grab the user form info and send it to AuthFactory

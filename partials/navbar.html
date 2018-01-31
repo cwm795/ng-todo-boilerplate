@@ -26,7 +26,8 @@
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li ng-repeat="item in navItems">
-          <a ng-show="{{bang}}$root.isLoggedIn" href={{item.url}}>{{item.name}}</a>
+          <!-- removed href in the <a> tags since we don't want to trigger the load. Left as anchor tag for bootstrap -->
+          <a ng-show="{{item.bang}}isLoggedIn" ng-click="navigate(item.url)" >{{item.name}}</a>
         </li>
       </ul>
     </div>

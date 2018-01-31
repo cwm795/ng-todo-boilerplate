@@ -36,8 +36,6 @@ angular.module("TodoApp").factory("ItemFactory", (FBUrl, $http, $q) => {
   }
 
   function addNewItem(todoItem) {
-    // todoItem.id = items.length;
-    // items.push(todoItem);
     return $q((resolve, reject) => {
       $http
         .post(`${FBUrl}/items.json`, JSON.stringify(todoItem))
